@@ -17,6 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(p_didTap)];
+    
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)p_didTap {
+    
+    
+    
+    [self.tabBarController setSelectedIndex:0];
+    
+    
 }
 
 

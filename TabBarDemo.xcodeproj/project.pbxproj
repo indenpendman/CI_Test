@@ -16,6 +16,7 @@
 		67A7323D1EE652C5004E6B53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A7323B1EE652C5004E6B53 /* LaunchScreen.storyboard */; };
 		67A732481EE652C5004E6B53 /* TabBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A732471EE652C5004E6B53 /* TabBarDemoTests.m */; };
 		67A732531EE652C5004E6B53 /* TabBarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A732521EE652C5004E6B53 /* TabBarDemoUITests.m */; };
+		67A732621EE65324004E6B53 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A732611EE65324004E6B53 /* TabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		67A7324E1EE652C5004E6B53 /* TabBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A732521EE652C5004E6B53 /* TabBarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarDemoUITests.m; sourceTree = "<group>"; };
 		67A732541EE652C5004E6B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67A732601EE65324004E6B53 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		67A732611EE65324004E6B53 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 			children = (
 				67A7322D1EE652C5004E6B53 /* AppDelegate.h */,
 				67A7322E1EE652C5004E6B53 /* AppDelegate.m */,
+				67A732601EE65324004E6B53 /* TabBarController.h */,
+				67A732611EE65324004E6B53 /* TabBarController.m */,
 				67A732301EE652C5004E6B53 /* FirstViewController.h */,
 				67A732311EE652C5004E6B53 /* FirstViewController.m */,
 				67A732331EE652C5004E6B53 /* SecondViewController.h */,
@@ -212,7 +217,8 @@
 				TargetAttributes = {
 					67A732261EE652C5004E6B53 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = H888M764RS;
+						ProvisioningStyle = Manual;
 					};
 					67A732421EE652C5004E6B53 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -280,6 +286,7 @@
 			files = (
 				67A732351EE652C5004E6B53 /* SecondViewController.m in Sources */,
 				67A7322F1EE652C5004E6B53 /* AppDelegate.m in Sources */,
+				67A732621EE65324004E6B53 /* TabBarController.m in Sources */,
 				67A732321EE652C5004E6B53 /* FirstViewController.m in Sources */,
 				67A7322C1EE652C5004E6B53 /* main.m in Sources */,
 			);
@@ -430,10 +437,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yuqiang zhou (8VDQ96LY6D)";
+				DEVELOPMENT_TEAM = H888M764RS;
 				INFOPLIST_FILE = TabBarDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = colr.TabBarDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShellColr.MotionBooks.enterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "de4a9dee-2377-4592-9499-97828556d18f";
+				PROVISIONING_PROFILE_SPECIFIER = proDev.profile;
 			};
 			name = Debug;
 		};
@@ -441,10 +452,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yuqiang zhou (8VDQ96LY6D)";
+				DEVELOPMENT_TEAM = H888M764RS;
 				INFOPLIST_FILE = TabBarDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = colr.TabBarDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShellColr.MotionBooks.enterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "de4a9dee-2377-4592-9499-97828556d18f";
+				PROVISIONING_PROFILE_SPECIFIER = proDev.profile;
 			};
 			name = Release;
 		};
@@ -513,6 +528,7 @@
 				67A732591EE652C5004E6B53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67A7325A1EE652C5004E6B53 /* Build configuration list for PBXNativeTarget "TabBarDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +537,7 @@
 				67A7325C1EE652C5004E6B53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67A7325D1EE652C5004E6B53 /* Build configuration list for PBXNativeTarget "TabBarDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +546,7 @@
 				67A7325F1EE652C5004E6B53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
